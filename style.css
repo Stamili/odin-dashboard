@@ -32,13 +32,13 @@ a {
 
 .container {
   display: grid;
-  grid-template-columns: 0.8fr 1.25fr 1.25fr 1fr;
+  grid-template-columns: 1fr 1.75fr 1.75fr 1fr;
   min-height: 100vh;
 }
 
 .sidebar {
   display: grid;
-  grid-template-rows: 1fr 6fr 3fr 1fr;
+  grid-template-rows: 2fr 6fr 3fr 1fr;
   gap: 50px;
   background-color: rgb(67, 255, 108);
 }
@@ -49,9 +49,14 @@ a {
 }
 
 .sidebar img {
-  height: 34px;
+  height: 28px;
   width: auto;
-  padding-left: 20px;
+  padding-left: 30px;
+}
+
+.sidebar .title img {
+  height: 50px;
+  padding-left: 8px;
 }
 
 .sidebar a {
