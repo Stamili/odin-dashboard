@@ -38,7 +38,7 @@ a {
 
 .sidebar {
   display: grid;
-  grid-template-rows: 2fr 6fr 3fr 1fr;
+  grid-template-rows: 1.5fr 6fr 3fr 1fr;
   gap: 50px;
   background-color: rgb(67, 255, 108);
 }
