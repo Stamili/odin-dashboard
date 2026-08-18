@@ -1,6 +1,74 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+@import url('https://fonts.googleapis.com/css2?\
+family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+html {
+    box-sizing: border-box;
 }
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body,
+h1, h2, h3, h4, h5, h6,
+p, figure, blockquote,
+dl, dd {
+    margin: 0;
+}
+
+body {
+    min-height: 100vh;
+    font-family: "Rubik", "Trebuchet MS", Arial, sans-serif;
+    line-height: 1.5;
+    font-size: 16px;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 0.8fr 1.25fr 1.25fr 1fr;
+}
+
+.sidebar {
+  display: grid;
+  grid-template-rows: 1fr 6fr 3fr 1fr;
+  gap: 50px;
+  background-color: rgb(67, 255, 108);
+}
+
+.sidebar .set1, .sidebar .set2 {
+  display: grid;
+  gap: 15px;
+}
+
+.sidebar img {
+  height: 40px;
+  width: auto;
+  padding-left: 20px;
+}
+
+.sidebar a {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 22px;
+  font-weight: 800;
+}
+
+.sidebar .set1 > div, .sidebar .set2 > div, .sidebar .title {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  align-items: center;
+  gap: 20px;
+}
+
+
 
