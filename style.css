@@ -83,14 +83,6 @@ h2 {
   grid-template-rows: 1fr 1fr;
 }
 
-.topbar .row1 {
-  display: grid;
-  grid-template-columns: 28px 6fr 28px 38px 1fr;
-  align-items: center; 
-  gap: 20px;
-  padding-left: 24px;
-}
-
 .topbar img {
   width: 28px;
   height: auto;
@@ -103,8 +95,23 @@ h2 {
   border-radius: 50%; 
 }
 
+.topbar .row1 .search {
+  display: grid;
+  grid-template-columns: 28px 1fr;
+  align-items: center;
+  gap: 16px;
+}
+
+.side-icons {
+  display: grid;
+  justify-self: end;
+  grid-auto-flow: column;
+  align-items: center;
+  gap: 24px;
+}
+
 #searchbar {
-  width: 80%;
+  width: 100%;
   background-color: #eef2f6;
   border: none;
   border-radius: 999px;
@@ -117,12 +124,15 @@ h2 {
   box-shadow: 0 0 0 2px rgba(0,0,0,0.1);
 }
 
-.topbar .row2 {
+.topbar > * {
   display: grid;
-  grid-template-columns: 1fr 1fr; 
+  grid-template-columns: 2fr 1fr; 
   align-items: center;       
-  padding: 8px 40px;    
-  border-bottom: 2px solid #e5e7eb;   
+  padding: 8px 40px;     
+}
+
+.topbar .row2 {
+  border-bottom: 2px solid #e5e7eb;  
 }
 
 .topbar .row2 .greetings {
@@ -158,7 +168,7 @@ h2 {
 
 .topbar .row2 .greetings .greeting-name {
   font-size: 18px;
-  font-weight: 800;             
+  font-weight: 700;             
 }
 
 .topbar .row2 .buttons {
